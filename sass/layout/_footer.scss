@@ -1,0 +1,214 @@
+@media screen and (max-width: 1199px) {
+    .footer-container {
+        text-align: center;
+        gap: 60px;
+    }
+
+    .footer-form__title {
+        text-align: center;
+    }
+
+    .social-networks__title {
+        text-align: center;
+    }
+}
+
+.footer {
+    padding-top: 60px;
+    padding-bottom: 60px;
+    background-color: var(--hero-footer-background-color--);
+}
+
+.footer-container {
+    margin: 0 auto;
+    padding: 0 15px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.footer-address__logo {
+    display: inline-block;
+
+    margin-bottom: 20px;
+}
+
+.logo_white {
+    color: var(--white-color--);
+}
+
+.address-list {
+    list-style: none;
+    margin: 0;
+}
+
+.address-list__contacts {
+    &:not(:last-child) {
+        margin-bottom: 8px;
+    }
+}
+
+.address-list__map {
+    line-height: 1.71;
+    text-decoration: none;
+    color: var(--white-color--);
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    &:hover,
+    &:focus {
+    color: var(--accent-color--);
+    }
+}
+
+
+.address-list__link {  
+    line-height: 1.71;
+    text-decoration: none;
+    color: var(--white-color-footer-link--);
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    &:hover,
+    &:focus {
+    color: var(--accent-color--);
+    }
+}
+
+
+.social-networks__title {
+    margin-bottom: 20px;
+
+    font-weight: 700;
+    line-height: 1.14;
+    text-transform: uppercase;
+
+    color: var(--white-color--);
+}
+
+.networks-list__link_dark {
+    color: var(--white-color--);
+    background-color: rgba(255, 255, 255, 0.1);
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    &:hover,
+    &:focus {
+        fill: var(--white-color--);
+        background-color: var(--accent-color--);
+    }
+}
+
+
+
+.footer-form__title {
+    font-weight: 700;
+    line-height: 1.14;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+    color: var(--white-color--);
+}
+
+.form-sign__mail {
+    margin-bottom: 20px;
+    min-width: 450px;
+    height: 50px;
+    padding: 15px 16px;
+    font-size: 16px;
+    line-height: 1.25;
+    align-items: center;
+    color: rgba(255, 255, 255, 0.6);
+    outline: none;
+    background-color: transparent;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    border-radius: 4px;
+    transition: filter 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    &:focus {
+        filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+    }
+}
+
+
+.form-sign__button {
+    margin: 0 auto;
+    cursor: pointer;
+    border: none;
+    border-radius: 4px;
+    @extend %align;
+    width: 200px;
+    height: 50px;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.88;
+    text-align: center;
+    letter-spacing: 0.06em;
+    color: var(--white-color--);
+    background-color: var(--accent-color--);
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    &:hover,
+    &:focus {
+        background-color: var(--accent-color-focus--);
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    }
+}
+
+.form-sign__telegram {
+    margin-left: 10px;
+    fill: currentColor;
+}
+
+
+
+@media screen and (min-width: 768px) {
+    .footer-container { 
+        justify-content: space-around;
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-items: baseline;
+    }
+}
+
+
+@media screen and (min-width: 1200px) {
+    .footer-container { 
+        flex-wrap: nowrap;
+        justify-content: space-between;
+    }
+
+    .address-list {
+        padding-left: 0;
+    }
+
+    .social-networks__title {
+        text-align: left;
+    }
+        .footer-address {
+        margin-right: auto;
+    }
+    
+    .address-list__contacts {
+        &:not(:last-child) {
+            margin-bottom: 9px;
+        }
+    }
+
+        .social-networks {
+        margin-right: auto;
+        }
+
+        .form-sign__mail {
+            min-width: 358px;
+            height: 50px;
+            margin: 0 12px 0 0;
+        }
+
+        .form-sign {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: row;
+        }
+}    
+    
+
+
